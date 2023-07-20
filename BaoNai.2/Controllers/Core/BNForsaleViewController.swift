@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for Forsale Ads
 final class BNForsaleViewController: UIViewController {
 
     override func viewDidLoad() {

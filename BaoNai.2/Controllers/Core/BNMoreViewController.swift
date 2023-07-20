@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for More Ads
 final class BNMoreViewController: UIViewController {
 
     override func viewDidLoad() {

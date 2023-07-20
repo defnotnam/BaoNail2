@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for Hiring Ads
 final class BNHiringViewController: UIViewController {
 
     override func viewDidLoad() {

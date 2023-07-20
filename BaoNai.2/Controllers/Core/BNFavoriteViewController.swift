@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for Favorites Ads
 final class BNFavoriteViewController: UIViewController {
 
     override func viewDidLoad() {

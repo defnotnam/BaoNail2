@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for Home Ads
 final class BNHomeViewController: UIViewController {
 
     override func viewDidLoad() {
