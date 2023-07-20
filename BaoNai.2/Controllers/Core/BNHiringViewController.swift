@@ -14,5 +14,12 @@ final class BNHiringViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Hiring"
+        
+        let request = BNRequest(endpoint: .ads)
+        print(request.url)
+        
+        BNService.shared.execute(request, expecting: BNAd.self) { result in
+            
+        }
     }
 }

@@ -18,8 +18,13 @@ final class BNService {
     /// Send Ad API Call
     /// -Parameters:
     ///  -request: Request instance
+    ///  -typeL The type fo object we expect to get back
     ///  -completion: Callback with data or error
-    public func execute(_ request: BNRequest, completion: @escaping () -> Void) {
+    public func execute<T: Codable>(
+        _ request: BNRequest,
+        expecting type: T.Type,
+        completion: @escaping (Result<String, Error>) -> Void
+    ) {
         
     }
 }

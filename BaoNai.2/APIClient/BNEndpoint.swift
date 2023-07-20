@@ -10,6 +10,6 @@ import Foundation
 /// Represents unique API endpoint
 @frozen enum BNEndpoint: String {
     ///Endpint to get ad info
-    case ads // "ads"
+    case ads = "index_api.php?zipcode=78745&api_key=jfu48dHgdn89" // "ads"
     case location
 }
