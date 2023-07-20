@@ -11,4 +11,5 @@ import Foundation
 @frozen enum BNEndpoint: String {
     ///Endpint to get ad info
     case ads // "ads"
+    case location
 }

@@ -16,6 +16,7 @@
 		D84A18E82A68B2B800AECA30 /* BNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A18E72A68B2B800AECA30 /* BNService.swift */; };
 		D84A18EA2A68B2CA00AECA30 /* BNRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A18E92A68B2CA00AECA30 /* BNRequest.swift */; };
 		D84A18EC2A68B2D400AECA30 /* BNEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A18EB2A68B2D400AECA30 /* BNEndpoint.swift */; };
+		D84A18EE2A68B6F800AECA30 /* BNLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84A18ED2A68B6F800AECA30 /* BNLocation.swift */; };
 		D8D7F8982A6661F300954F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7F8972A6661F300954F26 /* AppDelegate.swift */; };
 		D8D7F89A2A6661F300954F26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7F8992A6661F300954F26 /* SceneDelegate.swift */; };
 		D8D7F89C2A6661F300954F26 /* BNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7F89B2A6661F300954F26 /* BNTabBarController.swift */; };
@@ -33,6 +34,7 @@
 		D84A18E72A68B2B800AECA30 /* BNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNService.swift; sourceTree = "<group>"; };
 		D84A18E92A68B2CA00AECA30 /* BNRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNRequest.swift; sourceTree = "<group>"; };
 		D84A18EB2A68B2D400AECA30 /* BNEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNEndpoint.swift; sourceTree = "<group>"; };
+		D84A18ED2A68B6F800AECA30 /* BNLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNLocation.swift; sourceTree = "<group>"; };
 		D8D7F8942A6661F300954F26 /* BaoNai.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaoNai.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D7F8972A6661F300954F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D7F8992A6661F300954F26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D84A18D62A688F3600AECA30 /* BNAd.swift */,
+				D84A18ED2A68B6F800AECA30 /* BNLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D84A18E62A68905000AECA30 /* BNMoreViewController.swift in Sources */,
 				D84A18DC2A688FF600AECA30 /* BNHiringViewController.swift in Sources */,
 				D84A18D72A688F3600AECA30 /* BNAd.swift in Sources */,
+				D84A18EE2A68B6F800AECA30 /* BNLocation.swift in Sources */,
 				D84A18E12A68902100AECA30 /* BNHomeViewController.swift in Sources */,
 				D84A18E82A68B2B800AECA30 /* BNService.swift in Sources */,
 				D84A18EC2A68B2D400AECA30 /* BNEndpoint.swift in Sources */,

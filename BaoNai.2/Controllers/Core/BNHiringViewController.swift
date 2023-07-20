@@ -15,6 +15,4 @@ final class BNHiringViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Hiring"
     }
-    
-    
 }
