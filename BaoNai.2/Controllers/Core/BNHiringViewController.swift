@@ -10,16 +10,22 @@ import UIKit
 /// Controller to show and search for Hiring Ads
 final class BNHiringViewController: UIViewController {
 
+    private let hiringListView = BNHiringListView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Hiring"
-        
-        let request = BNRequest(endpoint: .ads)
-        print(request.url)
-        
-        BNService.shared.execute(request, expecting: BNAd.self) { result in
-            
-        }
+        setUpView()
+    }
+    
+    private func setUpView() {
+        view.addSubview(hiringListView)
+        NSLayoutConstraint.activate([
+            hiringListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            hiringListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            hiringListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            hiringListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+
+        ])
     }
 }

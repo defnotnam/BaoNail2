@@ -48,10 +48,12 @@ final class BNRequest {
         return string
     }
 
+    /// Computed & construected API url
     public var url: URL? {
         return URL(string: urlString)
     }
     
+    /// Desired http method
     public let httpMethod = "GET"
     // MARK: - Public
 
@@ -71,4 +73,8 @@ final class BNRequest {
     }
 
 
+}
+
+extension BNRequest {
+    static let listAdRequest = BNRequest(endpoint: .ads)
 }
