@@ -33,5 +33,7 @@ struct BNAd: Codable {
 
     enum Bstate: String, Codable {
         case tx = "TX"
+        case ca = "CA"
+        case unknown = "Unknown"
     }
 }

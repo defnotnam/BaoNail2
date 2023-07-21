@@ -27,8 +27,13 @@ extension BNHiringAdViewViewModel: UICollectionViewDataSource, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .systemGreen
+        guard  let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: BNHiringCollectionViewCell.cellIdentifier,
+            for: indexPath
+        ) as? BNHiringCollectionViewCell else {
+            fatalError("Unsupported cell")
+        }
+        let viewModel = BNHiringCollectionViewCellViewModel(bname: "Nail Spa", bcity: "(" + "College Station" + ",", bstate: .tx , distance:  "3"   )
         return cell
     }
     

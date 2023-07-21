@@ -35,8 +35,8 @@ final class BNHiringListView: UIView {
         collectionView.isHidden = true
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(UICollectionViewCell.self,
-                                forCellWithReuseIdentifier: "cell")
+        collectionView.register(BNHiringCollectionViewCell.self,
+                                forCellWithReuseIdentifier: BNHiringCollectionViewCell.cellIdentifier)
         //collectionView.register(RMFooterLoadingCollectionReusableView.self,
                                // forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                                // withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
@@ -86,21 +86,35 @@ final class BNHiringListView: UIView {
                 self.collectionView.alpha = 1
             })
         })
+        //MARK: - CHATGPT
+        collectionView.register(
+            BNHiringCollectionViewCell.self,
+            forCellWithReuseIdentifier: BNHiringCollectionViewCell.cellIdentifier
+        )
+
     }
 }
 
 extension BNHiringListView: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        return cell
+            func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+                return 20
+            }
+        
+            func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+                return cell
+            }
+        }
     }
 }
-    
+
+
+//MARK: -old
 //    func didSelectCharacter(_ character: RMCharacter) {
 //        delegate?.rmCharacterListView(self, didSelectCharacter: character)
 //    }
